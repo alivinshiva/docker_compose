@@ -67,12 +67,12 @@ Notes for Docker
 
 ## Running with Docker Compose
 
-If you prefer docker-compose, add a service for the app and Postgres, then run:
+If you prefer docker-compose, add a service for the app and neonDb-connection string, then run:
 
 ```bash
 docker compose up --build
 ```
-
+Make sure port- 3000 is free.
 ## Troubleshooting
 - Error: `@prisma/client did not initialize yet` — make sure `prisma generate` ran inside the environment where the app is executed (image or host). Do not overwrite `node_modules` at runtime.
 - Error: `Missing required environment variable: DATABASE_URL` — set `DATABASE_URL` in `.env` or in the environment before starting.
