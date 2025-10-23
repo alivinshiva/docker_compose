@@ -1,1 +1,11 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    # environment:
+    #   - DATABASE_URL=postgresql://neondb_owner:npg_Uj0Ziuw1gKJE@ep-holy-flower-adyr4kvx-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 
+    ports :
+      - 3000:3000
+    
